@@ -8,8 +8,6 @@ r = s.get(url)
 
 r.html.render(sleep=1)
 
-# print(r.status_code)
-
 products = r.html.xpath('//*[@id="product-items-container"]', first=True)
 
 def parse():
